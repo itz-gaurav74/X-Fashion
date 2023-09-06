@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    z-index: 1;
+    top: 5em;
+    width: 100%;
+    background: radial-gradient(#fff, #ffd6d6);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .list-item {
+    margin: 2em auto;
+  }
+  .nav-menu.active {
+    left: 0;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "vertical-small-card vertical-small-card"
+      "vertical-large-card vertical-large-card"
+      "first-box first-box"
+      "second-box second-box"
+      "third-box third-box";
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .feedback {
+    flex-direction: column;
+  }
+  .vertical-large-card {
+    height: 335px;
+  }
+}

@@ -1,0 +1,40 @@
+@media(max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "vertical-small-card"
+      "vertical-large-card"
+      "first-box"
+      "second-box"
+      "third-box";
+  }
+
+  .vertical-small-card,
+  .vertical-large-card,
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin: 0;
+  }
+
+  .vertical-small-card {
+    height: 150px;
+  }
+
+  .vertical-large-card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer-row {
+    flex-direction: column;
+  }
+  .offer-img {
+    width: 100%;
+  }
+  .offer-data {
+    width: 100%;
+  }
+}
