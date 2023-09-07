@@ -1,4 +1,4 @@
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
@@ -19,11 +19,20 @@
   }
 
   .vertical-small-card {
-    height: 150px;
+    font-size: 12px;
+    height: 75px;
   }
 
   .vertical-large-card {
     height: 200px;
+  }
+  .customers-feedback img{
+    height: 120px;
+    width: 120px;
+  }
+
+  .footer-data {
+    font-size: 1em;
   }
 }
 

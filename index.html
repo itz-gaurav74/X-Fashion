@@ -15,26 +15,26 @@
     <link rel="stylesheet" href="mobileview.css" />
     <!-- Tab View CSS -->
     <link rel="stylesheet" href="tabview.css" />
-    <title>X-Fashion Hub</title>
+    <title>X-Fashion</title>
   </head>
 
   <body>
     <section class="body-section">
       <header class="header">
         <nav class="navbar">
-          <a href="#" class="nav-logo">Logo</a>
+          <a href="#" class="nav-logo">X-Fashion</a>
           <ul class="nav-menu">
             <li class="list-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="list-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#products" class="nav-link">Products</a>
             </li>
             <li class="list-item">
-              <a href="#" class="nav-link">Products</a>
+              <a href="#offer" class="nav-link">Offer</a>
             </li>
             <li class="list-item">
-              <a href="#" class="nav-link">Support</a>
+              <a href="#feedbacks" class="nav-link">Feedbacks</a>
             </li>
           </ul>
           <div class="hamburger">
@@ -44,7 +44,7 @@
           </div>
         </nav>
 
-        <section class="cards">
+        <section class="cards" id="#home">
           <div class="card vertical-small-card">
             <h1>
               <span>
@@ -67,7 +67,7 @@
       <!-- Header End -->
 
       <!-- Featured Products -->
-      <section class="featured-products">
+      <section class="featured-products" id="products">
         <h2 class="title">featured products</h2>
         <div class="product-data">
           <div class="product-details">
@@ -252,7 +252,7 @@
       <!-- Latest Product End -->
 
       <!-- Offer -->
-      <section class="offers">
+      <section class="offers" id="offer">
         <div class="offer-row">
           <div class="offer-img">
             <img src="Images/Offers/Offer-1.jpg" alt="" />
@@ -271,7 +271,7 @@
       <!-- Offer Section End -->
 
       <!-- FeedBack Section -->
-      <section class="feedback">
+      <section class="feedback" id="feedbacks">
         <div class="customers-feedback">
           <i class="fa-solid fa-quote-left"></i>
           <p>
@@ -337,6 +337,9 @@
         <div class="footer-data">
           <p class="copyright">Copyright © 2023 - X-Fashion Hub</p>
         </div>
+        <button class="scrollToTop">
+          <i class="fa-solid fa-angles-up"></i>
+        </button>
       </footer>
     </section>
   </body>
